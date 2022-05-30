@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: kawolski/hello-world:#{Build.BuildId}#
+        image: kawolski/hello-world:latest
         ports: 
         - containerPort: 8080
 --- 
