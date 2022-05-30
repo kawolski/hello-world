@@ -14,9 +14,9 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: nginx:latest
+        image: jenkins/jenkins:lts-jdk11
         ports: 
-        - containerPort: 27017
+        - containerPort: 8080
 --- 
 # https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
@@ -29,5 +29,5 @@ spec:
   ports: 
   - protocol: TCP 
     port: 27017
-    targetPort: 27017 
+    targetPort: 8080 
   type: LoadBalancer 
