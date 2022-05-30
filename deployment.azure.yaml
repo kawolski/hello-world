@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: kawolski/hello-world:129
+        image: jenkins/jenkins:lts-jdk11
         ports: 
         - containerPort: 8080
 --- 
@@ -28,6 +28,6 @@ spec:
     app: angular 
   ports: 
   - protocol: TCP 
-    port: 80 
+    port: 8080
     targetPort: 8080 
   type: LoadBalancer 
