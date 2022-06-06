@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'Agent-Pool'
+  name: 'Agent_Pool'
 
 steps:
 - task: NodeTool@0
